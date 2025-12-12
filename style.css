@@ -1,6 +1,9 @@
 /* ------------------------------ */
 /*        GLOBAL PAGE STYLE        */
 /* ------------------------------ */
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -36,11 +39,12 @@ nav {
 }
 
 nav ul {
-    margin: 11;
-    padding: 30;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;   /* <-- add this */
 }
 
 nav ul li a {
