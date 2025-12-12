@@ -59,10 +59,11 @@ nav ul li a:hover {
 /* ------------------------------ */
 
 .section {
-    padding: 120px 30px;
-    max-width: 850px;
-    margin: auto;
+    padding: 120px 10vw;   /* use a % of the viewport for side padding */
+    max-width: 100%;       /* no fixed max width */
+    margin: 0 auto;
 }
+
 
 /* ------------------------------ */
 /*         INTRO SECTION          */
@@ -70,8 +71,17 @@ nav ul li a:hover {
 
 .intro {
     text-align: center;
-    padding-top: 180px;
-    padding-bottom: 180px;
+
+    /* Make it fill at least one full screen height */
+    min-height: 100vh;
+
+    /* Center the text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10vw;  /* side padding only, no top/bottom padding */
 
     background-image: url('header-bg.jpg');
     background-size: cover;
@@ -80,6 +90,7 @@ nav ul li a:hover {
 
     position: relative;
 }
+
 
 .intro::before {
     content: "";
