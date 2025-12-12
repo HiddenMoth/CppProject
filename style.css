@@ -24,7 +24,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 40px;
+    padding: 12px 30px;
     border-bottom: 1px solid #333;
     z-index: 1000;
 }
@@ -39,7 +39,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
 }
 
@@ -60,7 +60,7 @@ nav ul li a:hover {
 
 .section {
     padding: 120px 10vw;   /* use a % of the viewport for side padding */
-    max-width: 100%;       /* no fixed max width */
+    max-width: 90%;       /* no fixed max width */
     margin: 0 auto;
 }
 
