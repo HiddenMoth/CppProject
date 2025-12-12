@@ -59,10 +59,13 @@ nav ul li a:hover {
 /* ------------------------------ */
 
 .section {
-    padding: 120px 10vw;   /* use a % of the viewport for side padding */
-    max-width: 90%;       /* no fixed max width */
-    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;          /* centers the entire block */
+    padding: 120px 20px;
+    text-align: center;      /* centers the text inside */
 }
+
 
 
 /* ------------------------------ */
@@ -70,26 +73,21 @@ nav ul li a:hover {
 /* ------------------------------ */
 
 .intro {
-    text-align: center;
-
-    /* Make it fill at least one full screen height */
     min-height: 100vh;
-
-    /* Center the text vertically */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 0 10vw;  /* side padding only, no top/bottom padding */
+    text-align: center;
+    padding: 0 20px;
 
     background-image: url('header-bg.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
     position: relative;
 }
+
 
 
 .intro::before {
@@ -125,5 +123,11 @@ nav ul li a:hover {
     font-size: 22px;
     color: #bbbbbb;
 }
+.section ul {
+    text-align: left;       /* keep bullets readable */
+    margin: 0 auto;
+    display: inline-block;  /* allows ul to center on page */
+}
+
 
 /* -------------*
