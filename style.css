@@ -155,6 +155,34 @@ nav ul li a:hover {
     position: relative;
     z-index: 1;
 }
+/* Background for "Who is a Writer?" section */
+.writer-bg {
+    background-image: url('fluvial.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff;
+}
+
+/* Overlay for readability */
+.writer-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* adjust transparency as needed */
+    z-index: 0;
+}
+
+/* Ensure text appears above dark overlay */
+.writer-bg * {
+    position: relative;
+    z-index: 1;
+}
+
 
 
 /* -------------*
