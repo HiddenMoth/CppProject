@@ -39,7 +39,7 @@ nav ul {
     margin: 11;
     padding: 30;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     list-style: none;
 }
 
