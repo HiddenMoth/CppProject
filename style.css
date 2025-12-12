@@ -48,11 +48,10 @@ nav ul li a:hover {
 
 /* SECTIONS */
 .section {
-    padding: 100px 20px;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.8;
+    padding: 120px 30px;  /* increased left/right padding */
+    max-width: 850px;     /* slightly narrower for better reading */
 }
+
 
 /* INTRO SECTION */
 .intro {
@@ -87,7 +86,6 @@ nav ul li a:hover {
     z-index: 1;   /* Makes text appear above overlay */
 }
 
-}
 
 .intro h1 {
     font-size: 48px;
