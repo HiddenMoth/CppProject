@@ -1,32 +1,80 @@
+/* GENERAL PAGE STYLE */
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffffee;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
     color: #333;
+    font-size: 15px;
 }
 
-header {
-    background: #333;
-    color: white;
-    padding: 40px;
+nav ul li a:hover {
+    color: #0061a8;
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* INTRO SECTION */
+.intro {
     text-align: center;
+    padding-top: 150px;
 }
 
-.content {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.intro h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
+.subtitle {
+    font-size: 20px;
+    color: #555;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
+    padding: 40px;
+    background: #eaeaea;
     margin-top: 40px;
+    font-size: 14px;
 }
