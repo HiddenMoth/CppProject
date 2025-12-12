@@ -18,7 +18,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: 80%;
+    width: 100%;
     background: #000000d0;
     backdrop-filter: blur(6px);
     display: flex;
@@ -36,8 +36,8 @@ nav {
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
+    margin: 11;
+    padding: 30;
     display: flex;
     gap: 5px;
     list-style: none;
