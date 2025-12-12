@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: "Georgia", serif;
-    background: #f8f8f8;
-    color: #333;
+    background: #000;       /* Black background */
+    color: #e6e6e6;         /* Soft academic white */
     scroll-behavior: smooth;
 }
 
@@ -12,19 +12,20 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #ffffffee;
-    backdrop-filter: blur(6px);
+    background: #000000dd;  /* Dark transparent black */
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 30px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #333;
     z-index: 1000;
 }
 
 .nav-title {
     font-weight: bold;
     font-size: 18px;
+    color: #f1f1f1;
 }
 
 nav ul {
@@ -37,12 +38,12 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #cccccc;
     font-size: 15px;
 }
 
 nav ul li a:hover {
-    color: #0061a8;
+    color: #66b8ff; /* Soft academic blue */
 }
 
 /* SECTIONS */
@@ -50,7 +51,7 @@ nav ul li a:hover {
     padding: 100px 20px;
     max-width: 900px;
     margin: auto;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 /* INTRO SECTION */
@@ -63,18 +64,31 @@ nav ul li a:hover {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .subtitle {
     font-size: 20px;
-    color: #555;
+    color: #bbbbbb;
+}
+
+/* LIST STYLE */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+    color: #dcdcdc;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 40px;
-    background: #eaeaea;
+    background: #0a0a0a;
     margin-top: 40px;
     font-size: 14px;
+    border-top: 1px solid #333;
+    color: #aaaaaa;
 }
