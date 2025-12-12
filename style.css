@@ -128,6 +128,33 @@ nav ul li a:hover {
     margin: 0 auto;
     display: inline-block;  /* allows ul to center on page */
 }
+/* Background for "What is Writing?" section */
+.writing-bg {
+    background-image: url('oldwrit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff; /* make text readable */
+}
+
+/* Dark overlay so text is readable on top of image */
+.writing-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* adjust darkness here */
+    z-index: 0;
+}
+
+/* Make writing section text appear above overlay */
+.writing-bg * {
+    position: relative;
+    z-index: 1;
+}
 
 
 /* -------------*
