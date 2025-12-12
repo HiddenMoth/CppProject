@@ -1,26 +1,19 @@
-/* ------------------------------ */
-/*        GLOBAL PAGE STYLE        */
-/* ------------------------------ */
-
+/* GENERAL PAGE STYLE */
 body {
     margin: 0;
     font-family: "Georgia", serif;
-    background: #000;
-    color: #e6e6e6;
+    background: #000;       /* Black background */
+    color: #e6e6e6;         /* Soft academic white */
     scroll-behavior: smooth;
-    line-height: 1.75;
 }
 
-/* ------------------------------ */
-/*             NAVBAR             */
-/* ------------------------------ */
-
+/* NAVBAR */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #000000d0;
-    backdrop-filter: blur(6px);
+    background: #000000dd;  /* Dark transparent black */
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +24,7 @@ nav {
 
 .nav-title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     color: #f1f1f1;
 }
 
@@ -46,51 +39,35 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #cccccc;
-    font-size: 16px;
-    transition: color 0.2s ease;
+    font-size: 15px;
 }
 
 nav ul li a:hover {
-    color: #66b8ff;
+    color: #66b8ff; /* Soft academic blue */
 }
 
-/* ------------------------------ */
-/*            SECTIONS            */
-/* ------------------------------ */
-
+/* SECTIONS */
 .section {
-    padding: 120px 10vw;   /* use a % of the viewport for side padding */
-    max-width: 90%;       /* no fixed max width */
-    margin: 0 auto;
+    padding: 120px 30px;  /* increased left/right padding */
+    max-width: 850px;     /* slightly narrower for better reading */
 }
 
 
-/* ------------------------------ */
-/*         INTRO SECTION          */
-/* ------------------------------ */
-
+/* INTRO SECTION */
 .intro {
     text-align: center;
+    padding-top: 150px;
 
-    /* Make it fill at least one full screen height */
-    min-height: 100vh;
-
-    /* Center the text vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 10vw;  /* side padding only, no top/bottom padding */
-
+    /* Background image */
     background-image: url('header-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover;        /* Make image fill the section */
+    background-position: center;   /* Center the image */
     background-repeat: no-repeat;
 
+    /* Dark overlay for readability */
     position: relative;
+    padding-bottom: 150px;
 }
-
 
 .intro::before {
     content: "";
@@ -99,31 +76,46 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-
-    /* smooth gradient overlay for readability */
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.65)
-    );
+    background: rgba(0,0,0,0.6);   /* Soft dark overlay */
     z-index: 0;
 }
 
 .intro h1,
 .subtitle {
     position: relative;
-    z-index: 1;
+    z-index: 1;   /* Makes text appear above overlay */
 }
 
+
 .intro h1 {
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
 .subtitle {
-    font-size: 22px;
+    font-size: 20px;
     color: #bbbbbb;
 }
 
-/* -------------*
+/* LIST STYLE */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+    color: #dcdcdc;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #0a0a0a;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    color: #aaaaaa;
+}
